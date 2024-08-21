@@ -1,0 +1,31 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html,
+body,
+#root {
+  @apply bg-black text-white box-border;
+}
+
+
+::web-kit-scrollbar{
+  width: 4px;
+}
+
+::-webkit-scrollbar:horizontal{
+  height: 8px;
+}
+
+::-webkit-scrollbar-thumb{
+  /* @apply bg-rose-900 rounded-xl; */
+  background-color: #7f1d1d; 
+  border-radius: 1rem; 
+}
+
+
+.task > ::-webkit-scrollbar-thumb{
+  /* @apply bg-sky-100 rounded-xl; */
+  background-color: #e0f2fe; 
+  border-radius: 1rem;
+}
